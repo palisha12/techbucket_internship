@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f8f30a91d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="navbar">
+            <img class="logo" src="./img.png">
+            <div class="navbarI">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">SAAPE Declarations</a>
+                <a href="#">News</a>
+                <a href="#">Resources</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacts</a>
+            </div>
+            <div class="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="input">
+        <h1>Fighting Against Poverty And Injustice In South Asia </h1>
+        <p>At SAAPE,our main focus is poverty eradication through policy research,advocacy,lobbying and campaign
+            works.</p>
+    </div>
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.padding = "30px 10px";
+                document.getElementById("logo").style.fontSize = "25px";
+            } else {
+                document.getElementById("navbar").style.padding = "80px 10px";
+                document.getElementById("logo").style.fontSize = "35px";
+            }
+        }
+    </script>
+</body>
+</html>
