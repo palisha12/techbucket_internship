@@ -1,0 +1,118 @@
+!DOCTYPE html>
+<html>
+<head> <script src="https://kit.fontawesome.com/f8f30a91d9.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sidenav">
+    <div class="sidenav-up">
+    <img src="./Images/img1.png"> <br>
+        <p> <I>Fighting for justice,peace and human right of the LDCs</I></p>
+        <div class="search-container">
+        <select name="language" style="border: none;" id="language">
+            <option value="english">English</option>
+            <option value="nepali">Nepali</option>
+            <option value="spanish">Spanish</option>
+            <option value="indian">Indian</option>
+            <option value="japanese">Japanese</option>
+            <option value="french">French</option>
+            <option value="german">German</option>
+             </select>
+                 <input type="text" style="width:40%; border: none;" placeholder="Search">
+                   <i class="fa fa-search"></i>
+                </button>
+              </div>
+       </div> 
+    <div class="sidenav-down">  
+  <a href="#home">Home</a>
+  <button class="dropdown-btn">News Room 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">News</a>
+    <a href="#">Programme activities</a>
+    <a href="#">Press Release</a>
+    <a href="#">LDC Watch Statement</a>
+    <a href="#">LDC Watch on Media</a>
+    <a href="#">News on LDCs</a>
+    <a href="#">Announcements</a>
+  </div>
+  <button class="dropdown-btn">Resources
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Chair</a> </div>
+    <button class="dropdown-btn">LDC-IV CSO Forum
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Chair</a> </div>
+        <button class="dropdown-btn">About LDCs
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Watch</a> </div>
+            <button class="dropdown-btn">About Us
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Address</a> </div>
+
+</div>
+</div>
+</div>
+ <div class="main"> 
+        <img src="./Images/boardroom.jpg" height="500"> <br>
+</div>
+ <div class="container">
+  <div class="box">
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiselit. Urna tincidunt et tempor vel.</h1>
+      <br>
+      <br>
+      <br>
+      <h2>Lorem ipsum dolor sit amet, consectetur.</h2> 
+      <br>
+      <br>
+      <p><i class="arrow right"></i></p>   
+ </div>
+ <div class="square">
+   <br>
+   <h1>LDC-IV CSO Forum</h1>
+   <br>
+   <h2>Istanbul Declaration</h2> 
+   <p><i class="arrow right"></i></p>     
+</div>
+ 
+<div class="square1">
+  <br>
+  <h1>Bulletins</h1> 
+  <p><i class="arrow right"></i></p>     
+</div>
+
+<div class="square2">
+  <br>
+  <h1>IPoA Mid-term Review</h1> 
+  <p><i class="arrow right"></i></p>     
+</div>
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html>
