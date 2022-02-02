@@ -48,12 +48,12 @@
     color:#11639B;
 }
 .slider-frame {
-width: 70%;
+width: 45%;
+margin: 1rem;
 
-margin-left: 5rem;
  /*display: flex;
  justify-content: space-around;*/
- 
+
  
 }
 .slide-content img{
@@ -72,6 +72,6 @@ margin-left: 5rem;
     width:200px;
     position: relative;
     float: left;
-    padding-right: 15rem;
+    
     
 }
