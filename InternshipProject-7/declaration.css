@@ -52,15 +52,79 @@ font-weight: 600;
     background-color: #ddd;
     border-radius: 6px; 
   }
-.searchcontainer input[type=text]{
-    border-radius: 4px 4px 4px 4px;
-}
-.searchcontainer button{
-    color:rgb(39, 131, 235);
-    border: 0;
-    margin-right: 3rem;
+  .container{
+    max-width:600px;
+    margin:50px auto;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 2rem;
+  }
+  .searchbox{
+    position:relative;
+    min-width:50px;
+    width:0%;
+    height:50px;
+    float:right;
+    overflow:hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+  }
+  .searchbox-input{
+    top:0;
+    right:0;
+    border:0;
+    outline:0;
     background-color: white;
-}
+    width:70%;
+    height:45px;
+    margin:0;
+    padding:0px 55px 0px 20px;
+    font-size:16px;
+    color:black;
+    
+  }
+  .searchbox-input::-webkit-input-placeholder {
+    color: black;
+  }
+  .searchbox-input:-moz-placeholder {
+    color: black;
+  }
+  .searchbox-input::-moz-placeholder {
+    color: black;
+  }
+  .searchbox-input:-ms-input-placeholder {
+    color: black;
+  }
+  .searchbox-icon,
+  .searchbox-submit{
+      width:60px;
+      height:60px;
+      display:block;
+      position:absolute;
+      top:0rem;
+      font-family:verdana;
+      font-size:20px;
+      right:0;
+      padding:0;
+      margin:0;
+      border:0;
+      outline:0;
+      line-height:40px;
+      text-align:center;
+      cursor:pointer;
+      color: rgb(26, 69, 163);
+      background:white;
+      border-left: 1px solid white;
+      margin-top: .2rem;
+      padding-bottom: 4rem;
+
+  }
+  .searchbox-open{
+    width:100%;
+  }
 .declaration{
     margin-top:.4rem;
     display: flex;
@@ -94,6 +158,7 @@ font-weight: 600;
     
 }
 .search-bar input {
+    text-align:center;
     margin: 0px;
     padding: 0px;
     width: 70%;
@@ -120,8 +185,8 @@ font-weight: 600;
     
 }
 .left{
-    padding-top: 8rem;
-    width:30%;
+    padding-top: 7rem;
+    width:23%;
     margin-left: 1.5rem;
 }
 .Archieve{
@@ -133,16 +198,21 @@ font-weight: 600;
     padding-bottom:4px;
     border-radius: 9px 9px 9px 9px;
     background-color: white;
-    
+    width:300px;
+    height: 2.8rem;
 }
 .Archieve h3{
     color:#173095;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
+    text-align:left;
+    padding-right: 2rem;
+    margin-top: .4rem;
 }
 #subject{
-    padding: 3px 12px 3px 12px;
-    border-radius: 8px 8px 8px 8px;
+    margin-top: .2rem;
+    padding: 0px 40px 0px 40px;
+    border-radius: 18px 18px 18px 18px;
     box-shadow: inset 4px 11px 12px -10px grey;
     border:0;
     color:#173095;
@@ -190,7 +260,7 @@ width:70%;
     box-shadow: 2px 4px 4px 3px rgb(0,0,0,.4);
 }
 .right-content {
-  margin-left: 7rem;
+  /*margin-left: 4rem;*/
   padding:20px 30px 20px 30px;
   background-color: white;
   margin-right: 3rem;
@@ -214,8 +284,8 @@ width:70%;
 }
 .right-box{
     display: flex;
-    justify-content: space-around;
-   margin-top: 2rem;
+    justify-content: space-evenly;
+   margin-top: 2.8rem;
     
 }
 .right-content .right{
