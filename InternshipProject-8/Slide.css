@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    color:black;
+}
+body {font-family: Verdana, sans-serif;}
+.mySlides {
+    display: none;
+    height: 100vh;
+    margin-top:4rem;
+}
+.main{
+    width:100%;
+    height:100vh;
+    background-color: black;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 3000px;
+  position: relative;
+  height: 100vh;
+  margin-top: -4.7rem;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: grey;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 4s ease;
+  position: relative;
+  bottom:2rem;
+}
+.logo img{
+  position:absolute; 
+  height: 3.5rem;
+  width: 30rem;
+  top:2rem;
+  /* bottom:42rem; */
+  margin-left: 2rem;
+}
+.active {
+  background-color: red;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration:1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from { opacity: .8} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+.btn{
+  position:fixed;
+  top :0px;
+  right:0px;
+  height: 100px;
+  width: 100px;
+  background:  linear-gradient(to top right,transparent 50% ,transparent 50% , white 55%, white 100%);
+  color: black;
+  text-align: right;
+  padding-right:1rem;
+  cursor: pointer;
+  /* transition:right 0.4s ease; */
+}
+.btn.click{
+ right:0px; 
+ position: absolute;
+ z-index: 1;
+}
+.btn span{
+color: black;
+font-size: 28px;
+line-height: 45px;
+}
+.btn.click span:before{
+  content:'\f00d';
+}
+.sidebar{
+  position: fixed;
+  width:350px;
+  height: 100%;
+  right:-350px;
+  background:whitesmoke;
+  bottom:7rem;
+  top:0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* transition: right 0.4s ease; */
+}
+.sidebar.show{
+  right:0px;
+}
+nav ul{
+  background: whitesmoke;
+  height:100%;
+  width:100%;
+  list-style: none;
+}
+nav ul li{
+  line-height: 60px;
+  border-bottom:1px solid rgb(255,255,255,0.1);
+}
+nav ul li:last-child{
+  border-bottom: 1px solid  rgb(255,255,255,0.1);
+}
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width:100%;
+  border-left:3px solid transparent;
+}
+nav ul li a:hover{
+  color:rgb(38, 163, 163);
+  border-left-color: rgb(38, 163, 163);
+}
+nav ul ul {
+  position: static;
+  
+}
+nav ul ul li{
+ line-height:42px;
+ border-bottom: none;
+}
+nav ul ul li a{
+  font-size: 17px;
+  color: black;
+  padding-left: 80px;
+}
+.search-bar {
+  margin-top: 2rem;
+  width: 300px;
+  position: relative;
+  float: right;
+  padding: 4px 4px 4px 4px;
+}
+.search-bar input {
+  text-align: left;
+  margin: 0px;
+  width: 70%;
+  outline: none;
+  height: 30px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 4px 5px 0px rgb(0,0,0,0.3);
+  padding: 4px 4px 4px 4px;
+  border: 0;
+} 
+.search-bar button {
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  right: 0px;
+  z-index: 2;
+  border: none;
+  top:5px;
+  height: 20px;
+  cursor: pointer;
+  color: rgb(39, 131, 235);
+  background-color: whitesmoke;
+  margin-right: 6.5rem;
+  margin-top:4px;
+}
+#language{
+  height: 2.5rem;
+  width:13.5rem;
+  margin-left: 2rem;
+  border-radius: 8px 8px 8px 8px;
+  margin-top: 1rem;
+  border:0;
+  box-shadow: 0px 4px 5px 0px rgb(0,0,0,0.3);
+}
+
+
