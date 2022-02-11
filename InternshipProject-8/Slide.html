@@ -12,6 +12,7 @@
  <script src="https://code.jquery.com/jquery-3.4.1.js"></script> 
  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <link rel="stylesheet" href="./Slide.css"/>
+<script  src="./Slider.js"></script>
 </head>
 <body>
     <div class="main">
@@ -111,8 +112,59 @@
               </div>
             </div>
           </div>
+          <div class="main-container">
+            <h1>Videos</h1>
+          <div class="container">
+          <div class="video-container">
+            <video type="video/mp4" src="./video1.mp4" class="slider" controls></video>
+            <ul>
+              <li onclick="videoslider('./video1.mp4')"><video type="video/mp4" src="./video1.mp4"></video></li>
+              <li onclick="videoslider('./video2.mp4')"><video type="video/mp4" src="./video2.mp4"></video></li>
+              <li onclick="videoslider('./video3.mp4')"><video type="video/mp4" src="./video3.mp4"></video></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-top">
+          <div class="footer-contain">
+          <h1>Repair/RMA Service</h1>
+          <i class="right"></i>
+          <p>Warranty Information</p>
+        </div>
+        <div class="footer-contain">
+          <h1>Contact Us</h1>
+          <i class="right"></i>
+          <p>Inquiry Form</p>
+          <i class="right1"></i>
+          <p>FAQ</p>
+        </div>
+        <div class="footer-contain">
+          <h1>Download</h1>
+          <i class="right"></i>
+          <p>Driver</p>
+          <i class="right1"></i>
+          <p>Manual</p>
+        </div>
+        <div class="footer-contain">
+          <h1 id="sub">Subscribe</h1>
+          <i class="right"></i>
+          <p id="subs">Subscribe/Unsubscribe to newsletter</p>
+        </div>
+      </div>
+        <div class="footer-left">
+          <img src="Footer1.png">
+          <img src="Footer2.png">
+          <img src="footer3.png">
+          <img src="footer4.png">
+        </div>
+        <div class="footer-last">
+        <p>Copyright © <u>TUL Corporation</u>. All Rights Reserved. <u>Warranty</u>/<u> Privacy Policy</u> / Designed by MINMAX</p>
+        </div>
+      </div>
     </div> 
     <script>
+     
         var slideIndex = 0;
         showSlides();
         
@@ -139,5 +191,13 @@
             $('.sidebar').toggleClass("show");
           });
         </script>
+      <script>
+               function videoslider(links){
+    document.querySelector(".slider").src = links;
+  }
+      </script>
+             
+      
+        
 </body>
 </html>
