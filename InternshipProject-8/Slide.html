@@ -3,6 +3,7 @@
   <script src="https://kit.fontawesome.com/f8f30a91d9.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
@@ -87,28 +88,22 @@
             <span class="dot"></span>
           </div>
           <div class="products">
-            <div class="product">
+            <div class="product" id="first-product">
               <img src="product6.jpg">
-              <div class="images overlay overlay--blur">
               <div class="text-block">
                 <h4>Graphics Card</h4>
-              </div>
             </div>
             </div>
-            <div class="product">
+            <div class="product" id="second-product">
               <img src="product7.jpg">
-              <div class="images overlay overlay--blur">
-              <div class="text-block">
+              <div class="text-block1">
                 <h4>Gaming Keyboard</h4>
               </div>
-              </div>
             </div>
-            <div class="product">
+            <div class="product" id="third-product">
               <img src="product8.jpg">
-              <div class="images overlay overlay--blur">
-              <div class="text-block">
+              <div class="text-block2">
                 <h4>Gaming Laptop</h4>
-                </div>
               </div>
             </div>
           </div>
@@ -196,8 +191,36 @@
     document.querySelector(".slider").src = links;
   }
       </script>
-             
-      
-        
+ <script>
+  $(document).ready(function(){
+$("#first-product").mouseover(function(){
+$(".text-block h4").css("background", "gray");
+});
+$("#first-product").mouseout(function(){
+$(".text-block h4").css("background", "transparent");
+});
+  });
+</script>   
+<script>
+  $(document).ready(function(){
+$("#second-product").mouseover(function(){
+$(".text-block1 h4").css("background", "gray");
+});
+$("#second-product").mouseout(function(){
+$(".text-block1 h4").css("background", "transparent");
+});
+  });
+</script>   
+<script>
+  $(document).ready(function(){
+$("#third-product").mouseover(function(){
+$(".text-block2 h4").css("background", "gray");
+});
+$("#third-product").mouseout(function(){
+$(".text-block2 h4").css("background", "transparent");
+});
+  });
+</script>   
+                
 </body>
 </html>
