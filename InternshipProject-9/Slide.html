@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f8f30a91d9.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://code.jquery.com/jquery-3.4.1.js"></script> 
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="./Slide.css"/>
+<script  src="./Slider.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img   src="product1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img  src="product2.jpg" style="width:100%">
+            </div> 
+            <div class="mySlides fade">
+              <img src="product3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="product4.jpg" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="product5.jpg" style="width:100%">
+              </div>
+        </div> 
+        <div class="btn ">
+          <span class="fas fa-bars"></span>
+        </div>
+        <nav class="sidebar">
+          <div class="text">
+            
+        <div class=search-bar>
+          <input type="text" name="search" placeholder="Search...">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <select name="Language" id="language">
+          <option value="volvo">English</option>
+          <option value="saab">Nepali</option>
+          <option value="opel">Spanish</option>
+          <option value="audi">Japanese</option>
+        </select>
+            
+          </div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a>
+          <ul>
+            <li><a href="#">Graphics Card</a></li>
+            <li><a href="#">Graphics Card</a></li>
+            <li><a href="#">Graphics Card</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Media Center</a>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">video</a></li>
+          <li><a href="#">image</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Service Media</a>
+          <ul>
+            <li><a href="#">Repair</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">download</a></li>
+          </ul>
+        </ul>
+        </nav>
+        <div class="logo">
+          <img src="logo.png">
+        </div>
+        <div class="dots"style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="products">
+            <div class="product" id="first-product">
+              <img src="product6.jpg">
+              <div class="text-block">
+                <h4>Graphics Card</h4>
+            </div>
+            </div>
+            <div class="product" id="second-product">
+              <img src="product7.jpg">
+              <div class="text-block1">
+                <h4>Gaming Keyboard</h4>
+              </div>
+            </div>
+            <div class="product" id="third-product">
+              <img src="product8.jpg">
+              <div class="text-block2">
+                <h4>Gaming Laptop</h4>
+              </div>
+            </div>
+          </div>
+          <div class="main-container">
+            <h1>Videos</h1>
+          <div class="container">
+          <div class="video-container">
+            <video type="video/mp4" src="./video1.mp4" class="slider" controls></video>
+            <ul>
+              <li onclick="videoslider('./video1.mp4')"><video type="video/mp4" src="./video1.mp4"></video></li>
+              <li onclick="videoslider('./video2.mp4')"><video type="video/mp4" src="./video2.mp4"></video></li>
+              <li onclick="videoslider('./video3.mp4')"><video type="video/mp4" src="./video3.mp4"></video></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-top">
+          <div class="footer-contain">
+          <h1>Repair/RMA Service</h1>
+          <i class="right"></i>
+          <a href="#info">Warranty Information</a>
+        </div>
+        <div class="footer-contain">
+          <h1>Contact Us</h1>
+          <i class="right"></i>
+          <a href="#inquiry">Inquiry Form</a>
+          <i class="right1"></i><br>
+          <a href="#inquiry" id="link1">FAQ</a>
+        </div>
+        <div class="footer-contain">
+          <h1>Download</h1>
+          <i class="right"></i>
+          <a href="#inquiry">Driver</a>
+          <i class="right2"></i><br>
+          <a href="#" id="link">Manual</a>
+        </div>
+        <div class="footer-contain">
+          <h1 id="sub">Subscribe</h1>
+          <i class="right"></i>
+          <a href="#" id="subs">Subscribe/Unsubscribe to newsletter</a>
+        </div>
+      </div>
+        <div class="footer-left">
+            <div class="overlay">
+            </div>
+            <div class="overlay1">
+            </div>
+            <div class="overlay2"></div>
+            <div class="overlay3"></div>
+        </div>
+        <div class="footer-last">
+        <p>Copyright © <u>TUL Corporation</u>. All Rights Reserved. <u>Warranty</u>/<u> Privacy Policy</u> / Designed by MINMAX</p>
+        </div>
+      </div>
+    </div> 
+    <script>
+     
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+        </script>
+        <script>
+           $('.btn').click(function(){
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+          });
+        </script>
+      <script>
+               function videoslider(links){
+    document.querySelector(".slider").src = links;
+  }
+      </script>
+ <script>
+  $(document).ready(function(){
+$("#first-product").mouseover(function(){
+$(".text-block h4").css("background", "gray");
+});
+$("#first-product").mouseout(function(){
+$(".text-block h4").css("background", "transparent");
+});
+  });
+</script>   
+<script>
+  $(document).ready(function(){
+$("#second-product").mouseover(function(){
+$(".text-block1 h4").css("background", "gray");
+});
+$("#second-product").mouseout(function(){
+$(".text-block1 h4").css("background", "transparent");
+});
+  });
+</script>   
+<script>
+  $(document).ready(function(){
+$("#third-product").mouseover(function(){
+$(".text-block2 h4").css("background", "gray");
+});
+$("#third-product").mouseout(function(){
+$(".text-block2 h4").css("background", "transparent");
+});
+  });
+</script>   
+   
+                
+</body>
+</html>
